@@ -224,12 +224,11 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn catboost kagglehu
 
 Запустить Jupyter Notebook или открыть `.ipynb` через VS Code.
 
-В текущей версии ноутбука датасет загружается из Kaggle-пути:
+В текущей версии ноутбука датасет загружается из проекта:
 
 ```python
-df = pd.read_csv(
-    "/kaggle/input/datasets/egorkov/mts-churn/telco-customer-churn.csv"
-)
+df = pd.read_csv("data/telco-customer-churn.csv")
+
 ```
 
 При локальном запуске путь к файлу необходимо заменить на расположение датасета на локальной машине.
